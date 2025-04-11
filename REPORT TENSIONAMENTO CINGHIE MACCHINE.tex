@@ -1,0 +1,134 @@
+\documentclass[14pt]{article}
+
+\usepackage{sectsty}
+\usepackage{graphicx}
+\graphicspath{ {./IMMAGINI/} }
+\usepackage{fancyhdr}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{caption}
+\usepackage[italian]{babel}
+\usepackage{tikz}
+\usetikzlibrary{shapes.misc,shadows}
+
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=-0.25in
+\oddsidemargin=-0.25in
+\textwidth=18cm
+\textheight=9.0in
+\headsep=0.25in
+
+%\usepackage[showframe]{geometry}
+%\usepackage{geometry}
+%\geometry{lmargin=3cm,rmargin=3cm}
+
+%	\title{ HGL 1228 - BELT TENSIONIG}
+%	\author{ EDF Europe }
+%	\date{11/2024}
+
+%\begin{minipage}{0.5\textwidth}
+%	\centering
+%	\includegraphics[width=0.9\textwidth]{alzata618821vergine}
+%	\captionof*{image}{camma \textbf{attuale} con movimento a scatti}
+%\end{minipage}
+%\begin{minipage}{0.5\textwidth}
+%	\centering
+%	\includegraphics[width=0.9\textwidth]{camma618smooth}
+%	\captionof*{image}{camma \textbf{proposta} con movimento fluido}
+%\end{minipage}
+
+	
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=0.9\textwidth]{newcammadatimancanti}
+%\end{figure}
+
+
+
+\begin{document}
+	
+%	%TITOLO
+%	\begin{titlepage}
+%	\centering
+%	\begin{figure}[h]
+%		\centering
+%		\includegraphics[width=0.4\textwidth]{logo_edf} 
+%	\end{figure}
+%	\vspace{1cm}
+%	\Huge \textbf{titolo}\\
+%	\vspace{0,5cm}
+%	\huge SOTTOTITOLO
+%	\vspace{2cm}
+%	\begin{figure}[h]
+%		\centering
+%			\includegraphics[width=0.8\textwidth]{immagine_titolo} 
+%	\end{figure}
+%	\pagebreak
+%	\end{titlepage}
+	
+	% HEADER
+	\pagestyle{fancy}
+	\fancyhead{}
+	\rhead{
+			\includegraphics [width=50pt]{logo_edf}  %add image to header
+			}
+	\setlength{\headsep}{30pt} %set space between header and text
+	\renewcommand{\headrulewidth}{0pt} %set header line to disappear
+	
+	% FOOTER
+	\fancyfoot{} %set footer text
+	\fancyfoot[LE,LO]{\thepage \hspace{2pt} di \pageref{LastPage}}
+	\fancyfoot[CO,CE]{V0.0}
+	\fancyfoot[RO,RE]{PROCEDURE UTM \textbf{Loria}}
+	\renewcommand{\footrulewidth}{0.4pt} %add footer line (have to renew command becasue the defalut is 0)
+	
+	% TABLE OF CONTENTS
+	% Optional TOC
+	%\tableofcontents
+	%\pagebreak
+
+
+%	% NON SO COSA FA
+%	\renewcommand{\arraystretch}{1.2} % Default value: 1
+	
+%	% ESEMPIO SECTION
+%	\section{FIRST SECTION:}
+%	\subsection{SUBSECTION}
+%
+%	\begin{figure}
+%		\centering
+%		\includegraphics[width=0.7\textwidth]{foto}
+%		\caption{}
+%	\end{figure}
+
+%% TABELLA
+%	\begin{center}
+%	\begin{tabular}{l r | @{\hskip 20pt} l}
+%		\textbf{BELT CODE:} & 219xxxxxx & $\Longleftarrow$ \textit{indicates EDF's part code} \\
+%		\textbf{WIDTH:} & \textit{width} mm & $\Longleftarrow$ \textit{nominal belt width}\\
+%		\textbf{LENGTH:} & \textit{length} mm & $\Longleftarrow$ \textit{nominal belt length, for a new belt}\\
+%		\textbf{BELT MASS CONSTANT:} & \textit{mass} & $\Longleftarrow$ \textit{mass constant for the frequency calculation}\\
+%	\end{tabular}
+%	\captionof*{table}{\small(example of setup data table)}
+%\	end{center}
+
+% MINIPAGE CON IMMAGINE
+%	\begin{minipage}{0.4\textwidth}
+%	\centering
+%	\includegraphics[width=0.6\textwidth]{mock_belt}
+%	\captionof*{image}{\small(example of a belt diagram)}
+%\end{minipage}
+%\begin{minipage}{0.6\textwidth}
+%	\centering
+%	Belt diagrams are provided with the various pulleys \textbf{numbered}.
+%	
+%	Pulleys with a dashed profile are \textbf{adjustable idlers}.
+%\end{minipage}
+
+TESTO DI TEST
+
+
+\label{LastPage}
+\end{document}
