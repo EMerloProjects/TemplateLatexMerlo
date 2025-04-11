@@ -1,0 +1,144 @@
+\documentclass[14pt]{article}
+
+\usepackage{sectsty}
+\usepackage{graphicx}
+\graphicspath{ {./IMMAGINI/} }
+\usepackage{fancyhdr}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{caption}
+\usepackage[italian]{babel}
+\usepackage{tikz}
+\usetikzlibrary{shapes.misc,shadows}
+\usepackage{float}
+
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=-0.25in
+\oddsidemargin=-0.25in
+\textwidth=18cm
+\textheight=9.0in
+\headsep=0.25in
+
+% AGGIUNGI FILIGRANA
+\usepackage{draftwatermark} % Load the package
+\SetWatermarkText{PROVVISIORIO} % Set the watermark text
+\SetWatermarkScale{0.8} % Adjust the size
+\SetWatermarkColor[gray]{0.7} % Set color (gray)
+
+\begin{document}
+	
+%	%TITOLO
+%	\begin{titlepage}
+%	\centering
+%	\begin{figure}[h]
+%		\centering
+%		\includegraphics[width=0.4\textwidth]{LOGO GENRICO} 
+%	\end{figure}
+%	\vspace{1cm}
+\begin{center}
+	\LARGE \textbf{PROCEDURA UT GENERICA}\\
+	\vspace{0,5cm}
+	\large DATA/GENERICA/SEMPRE
+	\vspace{2cm}
+\end{center}
+	
+%	\begin{figure}[h]
+%		\centering
+%			\includegraphics[width=0.8\textwidth]{immagine_titolo} 
+%	\end{figure}
+%	\pagebreak
+%	\end{titlepage}
+	
+	% HEADER
+	\pagestyle{fancy}
+	\fancyhead{}
+	\rhead{
+			\includegraphics [width=50pt]{LOGO GENERICO}  %add image to header
+			}
+	\setlength{\headsep}{30pt} %set space between header and text
+	\renewcommand{\headrulewidth}{0pt} %set header line to disappear
+	
+	% FOOTER
+	\fancyfoot{} %set footer text
+	\fancyfoot[LE,LO]{\thepage \hspace{2pt} di \pageref{LastPage}}
+	\fancyfoot[CO,CE]{V0.0}
+	\fancyfoot[RO,RE]{PROCEDURE UTM \textbf{PAESE GENRICO}}
+	\renewcommand{\footrulewidth}{0.4pt} %add footer line (have to renew command becasue the defalut is 0)
+	
+	% TABLE OF CONTENTS
+	% Optional TOC
+	%\tableofcontents
+	%\pagebreak
+
+
+%	% NON SO COSA FA
+%	\renewcommand{\arraystretch}{1.2} % Default value: 1
+	
+%	% ESEMPIO SECTION
+%	\section{FIRST SECTION:}
+%	\subsection{SUBSECTION}
+%
+%	\begin{figure}
+%		\centering
+%		\includegraphics[width=0.7\textwidth]{foto}
+%		\caption{}
+%	\end{figure}
+
+%% TABELLA
+%	\begin{center}
+%	\begin{tabular}{l r | @{\hskip 20pt} l}
+%		\textbf{BELT CODE:} & 219xxxxxx & $\Longleftarrow$ \textit{indicates EDF's part code} \\
+%		\textbf{WIDTH:} & \textit{width} mm & $\Longleftarrow$ \textit{nominal belt width}\\
+%		\textbf{LENGTH:} & \textit{length} mm & $\Longleftarrow$ \textit{nominal belt length, for a new belt}\\
+%		\textbf{BELT MASS CONSTANT:} & \textit{mass} & $\Longleftarrow$ \textit{mass constant for the frequency calculation}\\
+%	\end{tabular}
+%	\captionof*{table}{\small(example of setup data table)}
+%\	end{center}
+
+% MINIPAGE CON IMMAGINE
+%	\begin{minipage}{0.4\textwidth}
+%	\centering
+%	\includegraphics[width=0.6\textwidth]{IMMAGINE GENERICA}
+%	\captionof*{image}{\small(EXAMPLE GENERICO)}
+%\end{minipage}
+%\begin{minipage}{0.6\textwidth}
+%	\centering
+%	TESTO IN MINIPAGE GENERICO.
+%\end{minipage}
+
+IL POMPIERE 
+
+\begin{itemize}
+	\item PAURA NON NE HA
+	\item \textbf{PAURA}: NON \color{NE} \textbf{HA}
+\end{itemize}
+
+\vspace{50pt} 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{IMMAGINE GENERICA}
+\end{figure}
+
+\pagebreak %magheggio
+
+HO COMPRATO LE SCARPE DI GOMMA
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{FIGURA GENERICA}
+\end{figure}
+
+NON DIRE GATTO SE NON CE L'HAI NEL SACCO
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{IMMAGINE GENERICA}
+\end{figure}
+
+
+
+\label{LastPage}
+\end{document}
